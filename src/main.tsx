@@ -7,6 +7,7 @@ import App from "./App";
 
 import Home from "./page/Home";
 import About from "./page/About";
+import Article from "./page/Articles";
 
 // router creation
 
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
 			{
 				path: "/about",
 				element: <About />,
+			},
+			{
+				path: "/articles/:id",
+				element: <Article />,
 			},
 		],
 	},
